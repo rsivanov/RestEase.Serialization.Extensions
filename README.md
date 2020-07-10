@@ -3,11 +3,11 @@
 [![NuGet](https://img.shields.io/nuget/dt/RestEase.Serialization.Extensions)](https://www.nuget.org/packages/RestEase.Serialization.Extensions) 
 [![NuGet](https://img.shields.io/nuget/v/RestEase.Serialization.Extensions)](https://www.nuget.org/packages/RestEase.Serialization.Extensions)
 
-Provides an implementation of RequestQueryParamSerializer that serializes object parameters in a format compatible with [asp.net core mvc model binding for complex types](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-3.1#complex-types).
+Provides an implementation of RequestQueryParamSerializer that serializes object parameters in a format compatible with [ASP.NET Core MVC model binding for complex types](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-3.1#complex-types).
 
 Why?
 ===
-It seems a bit strange, but by default [RestEase](https://github.com/canton7/RestEase) doesn't support serialization of complex type parameters, so that they could be correctly bound to controller method parameters by asp.net core mvc at the server side.
+It seems a bit strange, but by default [RestEase](https://github.com/canton7/RestEase) doesn't support serialization of complex type parameters, so that they could be correctly bound to controller method parameters by ASP.NET Core MVC at the server side.
 Imagine that we have a following controller:
 ```csharp
 [Route("[controller]")]
@@ -45,7 +45,7 @@ public async Task GetEmployeeByRequest_Success()
     Assert.True(request.Ids.SequenceEqual(response.Ids));
 }
 ```
-The problem is that [RestEase supports only Json serialization or ToString](https://github.com/canton7/RestEase#query-parameters) and that's not what asp.net core mvc expects according to the [official documentation](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-3.1#complex-types). 
+The problem is that [RestEase supports only Json serialization or ToString](https://github.com/canton7/RestEase#query-parameters) and that's not what ASP.NET Core MVC expects according to the [official documentation](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-3.1#complex-types). 
 
 How to use
 ===
