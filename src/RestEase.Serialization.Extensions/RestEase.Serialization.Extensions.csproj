@@ -2,15 +2,15 @@
 	<PropertyGroup>
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-		<PackageVersion>0.0.1</PackageVersion>
+		<PackageVersion>0.0.2</PackageVersion>
 		<AssemblyVersion>$(PackageVersion)</AssemblyVersion>
 		<Authors>rsivanov</Authors>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageProjectUrl>https://github.com/rsivanov/RestEase.Controllers.SourceGenerator</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/rsivanov/RestEase.Serialization.Extensions</PackageProjectUrl>
 		<PackageDescription>Provides an implementation of RequestQueryParamSerializer that serializes object parameters in a format compatible with asp.net core mvc model binding for complex types</PackageDescription>
 		<Copyright>Copyright 2020</Copyright>
-		<PackageTags>RestEase;Integration testing;SourceGenerator</PackageTags>
-		<RepositoryUrl>https://github.com/rsivanov/RestEase.Controllers.SourceGenerator</RepositoryUrl>
+		<PackageTags>RestEase;Serialization;</PackageTags>
+		<RepositoryUrl>https://github.com/rsivanov/RestEase.Serialization.Extensions</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 	</PropertyGroup>
 
